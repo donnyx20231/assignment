@@ -1,0 +1,218 @@
+.body {
+  padding-left: 40px;
+}
+ul,
+.list-items {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: flex-end;
+  /* padding-right: 70px; */
+  min-height: 8vh;
+}
+.nav-button {
+  display: none;
+}
+.one {
+  height: 2px;
+  width: 20px;
+}
+.submenu {
+  display: none;
+}
+li {
+  padding: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+li a {
+  text-decoration: none;
+  color: black;
+}
+li a:hover {
+  font-size: 16px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+/* .grid {
+  display: grid;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 3px;
+  grid-row-gap: 5px;
+  grid-template-columns: 700px;
+  grid-template-rows: 300px 100px;
+  background-color: blue;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.grid-item2 {
+  background-image: url(../img/pinkhand.jpg);
+}
+.grid-item3 {
+  background-image: url(../img/plnat.jpg);
+} */
+.grid,
+.col-parent,
+.col-parent-tel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.col-parent-tel {
+  margin-top: -20px;
+}
+
+.grid-container-2 {
+  /* background-color: teal; */
+  width: 47%;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.grid-container-1 {
+  /* background-color: green; */
+  width: 47%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* box-shadow: 20px; */
+}
+
+.grid-item1 {
+  background-image: url(../img/coffee.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40%;
+  border-radius: 20px;
+}
+.col-parent {
+  height: 60%;
+}
+.grid-item3 {
+  background-image: url(../img/pinkhand.jpg);
+  background-size: cover;
+  height: 90%;
+  width: 45%;
+  background-position: center;
+  border-radius: 10px;
+}
+.grid-item2 {
+  background-image: url(../img/plnat.jpg);
+  height: 90%;
+  width: 45%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+}
+.grid-item4 {
+  background-image: url(../img/plnat.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  width: 45%;
+  border-radius: 10px;
+}
+
+.grid-item5 {
+  background-image: url(../img/pinkhand.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  width: 45%;
+  border-radius: 10px;
+}
+.col-parent-tel {
+  height: 60%;
+}
+.rol-parent {
+  display: flex;
+  justify-content: center;
+  height: 40%;
+}
+.grid-item6 {
+  background-image: url(../img/coffee.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 92%;
+  width: 94%;
+  border-radius: 20px;
+}
+button {
+  margin: 80px 8px 50px 30px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: black;
+  font-size: 12px;
+  background-color: white;
+  border-style: none;
+}
+button:hover {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+.text {
+  line-height: 2px;
+  padding-left: 30px;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+/* media query */
+@media screen and (max-width: 700px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .body {
+    padding-right: 20px;
+  }
+  .list-items {
+    display: none;
+  }
+  .nav-button {
+    display: list-item;
+  }
+  .nav-button:hover .submenu-list {
+    display: list-item;
+    background-color: brown;
+    height: 40px;
+  }
+  .grid-container-1 {
+    width: 500px;
+  }
+  .grid-container-2 {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 503px) {
+  .body {
+    position: relative;
+  }
+  .grid {
+    position: absolute;
+    justify-content: center;
+  }
+  .grid-container-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .grid-item1 {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 896px) {
+  .list-items {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 688px) {
+  .list-items {
+    padding-right: 0;
+  }
+}
